@@ -1,0 +1,25 @@
+api:
+  identifier: 'anydev-authserver-microservice'
+  port: 5001
+
+logger:
+  options:
+    level: trace
+
+mongodb:
+  url: 'mongodb+srv://sadocmtl:Mongodb2023$@cluster0.fecal41.mongodb.net/'
+  database: 'anydev'
+  timeout: '5000'
+  options:
+    user: 'sadocmtl'
+    pass: 'Mongodb2023$'
+    authSource: 'admin'
+    dbName: 'anydev'
+    useUnifiedTopology: true
+    useNewUrlParser: true
+
+jwt:
+  accessTokenSecret: '0d7c5c5f-768c-4d98-8900-13aadaa21937'
+  refreshTokenSecret: '1a7v8c0l-391k-1f82-4492-tha3taa11334'
+  accessTokenLife: '30d'
+  refreshTokenLife: 2592000
